@@ -11,13 +11,6 @@ alumnos = [
 def calcular_media(alumnos):
     """
     Calcula la media de las notas de una lista de alumnos.
-
-    Parámetros:
-        alumnos (list): Lista de diccionarios con nombre y nota.
-
-    Devuelve:
-        float: Media de las notas redondeada a 2 decimales.
-        Si la lista está vacía, devuelve 0.
     """
     if len(alumnos) == 0:
         return 0
@@ -32,12 +25,12 @@ def calcular_media(alumnos):
     return round(media, 2)
 
 
-# Inicializar contadores
+# Para iniciar el contador
 total_alumnos = 0
 aprobados = 0
 suspendidos = 0
 
-# Recorrer alumnos
+# Creamos bucle for para recorrer la lista de alumnos
 for alumno in alumnos:
     nombre = alumno["nombre"].upper()
     nota = alumno["nota"]
